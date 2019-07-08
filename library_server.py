@@ -13,11 +13,11 @@ WIDTH = 1
 HEIGHT = 30
 BLACK = 0
 WHITE = 255
-START = "101100100".replace('0','00').replace('1','11').replace('0000','00000').replace('1111','11111')    #     0             1            2             3             4             5             6             7            8               9       
+START = "101100100".replace('0','00').replace('1','11').replace('0000','00000').replace('1111','11111')
 NUMBERS = [i.replace('0','00').replace('1','11').replace('0000','00000').replace('1111','11111') for i in ["1010101001", "1010101100", "1010100101", "1011001010", "1010110100", "1011010100", "1010010101", "1010010110", "1010011010", "1011010010"]]
-CARD_END3 = "101010011001".replace('0','00').replace('1','11').replace('0000','00000').replace('1111','11111') #Trebor and Mom
-CARD_END2 = "101011001001".replace('0','00').replace('1','11').replace('0000','00000').replace('1111','11111') #My card
-CARD_END1 = "" #Dad's card, not yet recorded
+CARD_END3 = "101010011001".replace('0','00').replace('1','11').replace('0000','00000').replace('1111','11111')
+CARD_END2 = "101011001001".replace('0','00').replace('1','11').replace('0000','00000').replace('1111','11111')
+CARD_END1 = ""
 BOOK_END  = "101001001011".replace('0','00').replace('1','11').replace('0000','00000').replace('1111','11111')
 ENDS = [BOOK_END, CARD_END1, CARD_END2, CARD_END3]
 
