@@ -2,7 +2,6 @@ package com.aself.student.librarycard;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.os.AsyncTask;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -75,9 +74,8 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public class ClientThread extends AsyncTask implements Runnable {
-        @Override
-        protected Object doInBackground(Object[] objects) {
+    public class ClientThread implements Runnable {
+        public void run() {
             errorbox.setText("ClientThread.run() called");
             try {
                 errorbox.setText("before the getByName call");
